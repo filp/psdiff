@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bindata (2.0.0)
+    chunky_png (1.3.0)
+    hashie (2.0.5)
+    oily_png (1.1.1)
+      chunky_png (~> 1.3.0)
+    psd (2.0.0)
+      bindata
+      chunky_png
+      psd-enginedata (~> 1.0)
+      rake
+    psd-enginedata (1.0.0)
+      hashie (~> 2.0)
+    psd_native (1.0.0)
+      oily_png (~> 1.1)
+      psd (>= 2.0.0)
+    rake (10.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  psd
+  psd_native
