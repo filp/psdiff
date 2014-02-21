@@ -4,8 +4,9 @@
 library to automagically generate up-to-date image files from PSDs in the repository,
 allowing you to easily preview them and make use of github's image diff tools.
 
-![Diff Example](http://i.imgur.com/jCOBI2H.png)
-**Check out an example diff**: https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42
+[![Diff Example](http://i.imgur.com/jCOBI2H.png)
+**[Check out an example diff](https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42)**
+](https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42) 
 
 ```bash
 filp@filp-x ~/dev/myproject
