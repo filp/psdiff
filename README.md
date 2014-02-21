@@ -6,7 +6,7 @@ allowing you to easily preview them and make use of github's image diff tools.
 
 [![Diff Example](http://i.imgur.com/jCOBI2H.png)
 **[Check out an example diff](https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42)**
-](https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42) 
+](https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42)
 
 ```bash
 filp@filp-x ~/dev/myproject
@@ -27,20 +27,29 @@ psdiff: created mock.psd.png # <----------
 
 That's it!
 
-## Warning
+## How do I install this?
+
+Glad you asked! Couldn't be easier. Just run this in the root of a git repo:
+
+```
+bash <(curl -sSL https://raw.github.com/filp/psdiff/master/install.sh)
+```
+
+Here's what that script does:
+
+ 1. Scolds you if you don't have Ruby installed (it's required!)
+ 2. Checks if the `psd` gem is installed and allows you to install it if needed.
+ 3. Downloads the `pre-commit` hook from this repo to your `.git/hooks`.
+
+Congrats! Any changes you make to psd files in the repository will now trigger psdiff!
+
+### Warning
 
 It's **really** not a good idea to keep large PSD files in your repositories - this project
 is just a proof of concept/half-assed joke.
 
 If you're a designer looking for a version control solution, check out
 [LayerVault](https://layervault.com)
-
-## Installing
-
-1. Install the `psd` gem: `gem install psd`
-2. *(optional)* Install the `psd_native` gem if you're on Ruby MRI: `gem install psd_native`
-3. Copy `git/hooks/pre-commit` to your project's `.git/hooks` directory, any
-future changes to `psd` files will trigger `psdiff` to generate image files.
 
 ## Author
 
