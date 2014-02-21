@@ -17,3 +17,5 @@ curl "https://raw2.github.com/filp/psdiff/master/git/hooks/pre-commit" -o "pre-c
 
 # Add execution bits to the user
 chmod u+x "pre-commit"
+
+echo "It worked! Go ahead and commit your PSDs!"
