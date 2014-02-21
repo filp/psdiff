@@ -1,10 +1,11 @@
 # psdiff
 
-This is a proof of concept project attempting to ever so slightly improve git workflows involving large PSD (Photoshop) files.
-
 *psdiff* uses git hooks and the lovely [psd.rb](https://github.com/layervault/psd.rb)
 library to automagically generate up-to-date image files from PSDs in the repository,
 allowing you to easily preview them and make use of github's image diff tools.
+
+**HEY:** You really should avoid putting PSD files in your repositories, this is just
+a proof of concept.
 
 ```bash
 filp@filp-x ~/dev/myproject
