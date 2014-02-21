@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+if defined?(RUBY_ENGINE) && RUBY_ENGINE == "ruby"
+  require "psd_native"
+else
+  require "psd"
+end
+
+# Log helper with a psdiff prefix:
+def log(msg)
+  puts "psdiff: #{msg}"
+end
+
+# Given a path to a .psd file, build an appropriate
+# path for the corresponding image file.
+def image_path_for_psd(psd_path)
+  "#{psd_path}.png" # that wasn't very hard now was it?
+end
+
+# Get the full changeset and chomp out newline endings:
+files = `git diff --cached --name-only`.lines.map!(&:chomp)
+
+# Filter the full list of files to only .psd files
+# we can work with:
+files.select { |f| f[/\.psd$/] }.each do |file|
+  image_path = image_path_for_psd(file)
+
+  if File.exists?(file)
+    PSD.open(file) do |psd|
+      # Export a new image for this file:
+      psd.image.save_as_png(image_path)
+
+      # Add the new path to the commit:
+      `git add #{image_path}`
+
+      log "created #{image_path}"
+    end
+  else
+    # If the file has been removed in this commit, check
+    # if there's a generated image we should be removing aswell:
+    if File.exists?(image_path)
+      File.delete(image_path)
+      log "removed #{image_path}"
+
+      # Tell git we're getting rid of this thing:
+      `git rm #{image_path}`
+    end
+  end
+end
