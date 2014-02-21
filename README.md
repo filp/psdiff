@@ -4,10 +4,8 @@
 library to automagically generate up-to-date image files from PSDs in the repository,
 allowing you to easily preview them and make use of github's image diff tools.
 
-**HEY:** You really should avoid putting PSD files in your repositories, this is just
-a proof of concept.
-
-Check out an example diff: https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42
+![Diff Example](http://i.imgur.com/jCOBI2H.png)
+**Check out an example diff**: https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42
 
 ```bash
 filp@filp-x ~/dev/myproject
@@ -28,7 +26,10 @@ psdiff: created mock.psd.png # <----------
 
 That's it!
 
-While it's generally not a good idea to have large binary files in your git repository, PSD files are a common exception (since it's often convenient to keep them alongside the rest of the project).
+## Warning
+
+It's **really** not a good idea to keep large PSD files in your repositories - this project
+is just a proof of concept/half-assed joke.
 
 If you're a designer looking for a version control solution, check out
 [LayerVault](https://layervault.com)
