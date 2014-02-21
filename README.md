@@ -1,4 +1,5 @@
 # psdiff
+**http://filp.github.io/psdiff**
 
 *psdiff* uses git hooks and the lovely [psd.rb](https://github.com/layervault/psd.rb)
 library to automagically generate up-to-date image files from PSDs in the repository,
