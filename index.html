@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>psdiff · simple psd file previews for git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500" rel="stylesheet">
+    <link href="asst/psdiff.css" rel="stylesheet">
+  </head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="container">
+    <header role="banner">
+      <div class="branding">
+        <h1 class="branding-logo">ps<strong>diff</strong></h1>
+        <small class="branding-copy">simple <strong>.psd</strong> previews for git</small>
+      </div>
+      <div class="authors">
+        <small>by:</small>
+        <a class="author" href="https://github.com/filp">filp</a> &amp;
+        <a class="author" href="https://github.com/gabrielecirulli">gabrielecirulli</a>
+      </div>
+    </header>
+    <section class="intro">
+      <p class="copy">
+        If you have Photoshop <abbr title="Photoshop Document">psd</abbr> files lying
+        around your git repository, you probably already know there's no easy way to track
+        any changes to them &mdash; you have to launch Photoshop and manually inspect them, and
+        if you're not a designer or don't have Photoshop installed on your device, you're fresh out of
+        luck.
+      </p>
+      <div class="links">
+        <a class="button" href="https://github.com/filp/psdiff">check it out on github &raquo;</a>
+      </div>
+    </section>
+    <div class="separator">
+      <h3>a <em>simple</em> solution</h3>
+    </div>
+    <section class="intro-cont">
+      <p class="copy">
+        <strong>psdiff</strong> is a small tool that you install as a git hook &mdash;
+        then, any time anyone makes a change to a psd file,
+        <em>psdiff automagically generates an accompanying png export of the modified file.</em>
+      </p>
+
+      <p class="copy">
+        This means:
+      </p>
+
+      <ul class="benefit-list">
+        <li>Anyone on your team can easily have an overview of the contents of PSD files</li>
+        <li>Developers can more easily adapt to small changes in mockups without depending
+          on a designer.</li>
+        <li>You can make use of existing image-diff tools, such as
+          <a href="https://github.com/blog/817-behold-image-view-modes" target="_blank">
+            Github's Image view modes</a>!
+        </li>
+      </ul>
+
+      <div class="demo-image">
+        <img src="http://i.imgur.com/jCOBI2H.png" alt="Github Image view modes">
+      </div>
+    </section>
+
+    <section class="callout-use">
+      <p class="copy">
+        Get more details and usage instructions &mdash;
+        <a href="https://github.com/filp/psdiff">go to the <strong>psdiff</strong> Github repository &raquo;</a>
+      </p>
+    </section>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="asst/psdiff.js"></script>
+</body>
+</html>

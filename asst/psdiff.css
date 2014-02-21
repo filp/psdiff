@@ -1,0 +1,132 @@
+html { background-color: #443875;}
+body {
+  font-size: 16px;
+  font-family: "Alegreya Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+}
+  a:hover {
+    color: rgba(255, 255, 255, .8);
+  }
+
+header[role="banner"] {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.links {
+  margin-top: 40px;
+  text-align: center;
+}
+  .button {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid white;
+    font-size: 1.4em;
+  }
+
+    .button:hover {
+      border-color: rgba(255, 255, 255, .8);
+    }
+
+.authors {
+  margin: 15px;
+}
+  .author {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    font-weight: bold;
+  }
+    .author:hover {
+      color: white;
+    }
+
+.branding {}
+  .branding-logo {
+    font-weight: 300;
+    font-size: 5em;
+
+    margin: 0;
+  }
+  .branding-copy {
+    font-size: 1.1em;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+  }
+
+.container {
+  min-width: 300px;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.copy {
+  font-size: 1.4em;
+  margin-top: 0;
+}
+  .copy-intro {
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+abbr {
+  font-weight: bold;
+}
+
+.separator {
+  margin-top: 40px;
+  text-align: center;
+}
+  .separator:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 10px;
+    border-top: 3px solid rgba(255, 255, 255, .1);
+  }
+
+  .separator h3 {
+    font-weight: 300;
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 0;
+    top: -35px;
+    position: relative;
+    padding: 10px 25px;
+    background-color: #443875;
+    border-radius: 35px;
+    border: 3px solid rgba(255, 255, 255, .1);
+  }
+
+em {
+  font-style: normal;
+}
+
+.intro, .callout-use {
+  background: rgba(0, 0, 0, .05);
+  padding: 40px;
+  border-radius: 35px;
+}
+  .intro .copy, .callout-use .copy {
+    margin: 0;
+  }
+
+.benefit-list {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.demo-image {
+  margin: 40px;
+}
+  .demo-image img {
+    box-shadow: 0 5px 0 rgba(0, 0, 0, .1);
+  }
