@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-exec </dev/tty
 set -e # Fail if any command exits with nonzero status
 
 if
