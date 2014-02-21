@@ -7,6 +7,8 @@ allowing you to easily preview them and make use of github's image diff tools.
 **HEY:** You really should avoid putting PSD files in your repositories, this is just
 a proof of concept.
 
+Check out an example diff: https://github.com/filp/psdiff/commit/44b6b0466fe707396cfd6c771e5d744025e66196?diff-0=1-42
+
 ```bash
 filp@filp-x ~/dev/myproject
 > $ git status
