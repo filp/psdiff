@@ -46,8 +46,8 @@ Congrats! Any changes you make to psd files in the repository will now trigger p
 
 ### Warning
 
-It's **really** not a good idea to keep large PSD files in your repositories - this project
-is just a proof of concept/half-assed joke.
+It's **not really** a good idea to keep large PSD files in your repositories - this project
+is partially a proof-of-concept, and partially a helper for existing projects.
 
 If you're a designer looking for a version control solution, check out
 [LayerVault](https://layervault.com)
