@@ -38,8 +38,7 @@ files.select { |f| f[/\.psd$/] }.each do |file|
     # If the file has been removed in this commit, check
     # if there's a generated image we should be removing aswell:
     if File.exists?(image_path)
-      File.delete(image_path)
-      log "removed #{image_path}"
+      log "removing #{image_path}"
 
       # Tell git we're getting rid of this thing:
       `git rm #{image_path}`
