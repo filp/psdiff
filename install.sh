@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+exec </dev/tty
 set -e # Fail if any command exits with nonzero status
 
 if
@@ -28,7 +29,7 @@ cd ".git/hooks"
 if
   [[ -a pre-commit ]]
 then
-  read -p "There's a 'pre-commit' hook in '.git/hooks' already. Le overwrite? (yes/no) " yn
+  read -p "There's a 'pre-commit' hook in '.git/hooks' already. Should I overwrite? (yes/no) " yn
   case $yn in
       [Yy]* ) echo -e "\nOverwrite it be!";;
       * ) echo -e "\nThis repo ain't big enough for both of us hooks!"; exit 1;;
