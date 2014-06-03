@@ -54,4 +54,4 @@ If you're a designer looking for a version control solution, check out
 
 ## Author
 
-This tiny library was developed by [Filipe Dobreira](https://github.com/filp)
+This tiny library was developed by [Filipe Dobreira](https://github.com/filp) and (Gabriele Cirulli)[https://github.com/gabrielecirulli]
