@@ -28,6 +28,13 @@ psdiff: created mock.psd.png # <----------
 
 That's it!
 
+## Github now supports PSD viewing!
+
+Check it: [Github Blog - PSD Viewing & Diffing](https://github.com/blog/1845-psd-viewing-diffing)
+
+This tool will remain available as it still possibly has its uses outside Github.
+
+
 ## How do I install this?
 
 Glad you asked! Couldn't be easier. Just run this in the root of a git repo:
