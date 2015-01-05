@@ -36,7 +36,7 @@ then
 fi
 
 # Get ze file
-curl -sS "https://raw2.github.com/filp/psdiff/master/git/hooks/pre-commit" -o "pre-commit"
+curl -sS "https://raw.githubusercontent.com/filp/psdiff/master/git/hooks/pre-commit" -o "pre-commit"
 
 # Add execution bits to the user
 chmod u+x "pre-commit"
